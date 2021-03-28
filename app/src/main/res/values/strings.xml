@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">chandiWalaApp</string>
+    <string name="login">Login</string>
+    <string name="login1">LOGIN</string>
+    <string name="username">UserName</string>
+    <string name="userName">userName</string>
+    <string name="name">Name</string>
+    <string name="userpassword">userPassword</string>
+    <string name="password">PASSWORD</string>
+    <string name="password1">Password</string>
+    <string name="sumbitbutton">SumbitButton</string>
+    <string name="password2">Password</string>
+</resources>
