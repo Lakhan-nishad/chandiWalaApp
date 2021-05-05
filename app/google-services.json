@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "620223882484",
+    "project_id": "chandiwalaapp",
+    "storage_bucket": "chandiwalaapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620223882484:android:871d5f74de22404c3c2aa1",
+        "android_client_info": {
+          "package_name": "com.example.chandiwalaapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620223882484-rs052c911fv66d3qu97tkae36k1k7ud1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_LbwGe11D3iG7rhJYTPS7aE-9M_mNq7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620223882484-rs052c911fv66d3qu97tkae36k1k7ud1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

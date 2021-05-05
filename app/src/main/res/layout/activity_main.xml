@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <TextView
@@ -19,19 +20,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.351" />
+        app:layout_constraintVertical_bias="0.287" />
 
     <ImageView
         android:id="@+id/userNameImageView"
-        android:layout_width="40dp"
-        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
         android:contentDescription="@string/username"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/userNameEditText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.146"
+        app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.429"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/user" />
 
     <EditText
@@ -51,33 +52,31 @@
 
     <ImageView
         android:id="@+id/userPasswordImageView"
-        android:layout_width="40dp"
-        android:layout_height="50dp"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
         android:contentDescription="@string/userpassword"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/userPasswordEditText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/userNameImageView"
-        app:layout_constraintVertical_bias="0.064"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/password" />
 
     <ImageButton
-        android:id="@+id/submitImageButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/loginImageButton"
+        android:layout_width="84dp"
+        android:layout_height="76dp"
         android:contentDescription="@string/sumbitbutton"
-        android:onClick="changeActivity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userEditTextPassword"
-        app:layout_constraintVertical_bias="0.29"
+        app:layout_constraintTop_toBottomOf="@+id/userPasswordEditText"
+        app:layout_constraintVertical_bias="0.081"
         app:srcCompat="@drawable/submit" />
 
     <EditText
-        android:id="@+id/userEditTextPassword"
+        android:id="@+id/userPasswordEditText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:autofillHints=""
@@ -93,12 +92,47 @@
 
     <ImageView
         android:id="@+id/logoImageView"
-        android:layout_width="300dp"
-        android:layout_height="200dp"
-        app:layout_constraintBottom_toTopOf="@+id/loginTextView"
+        android:layout_width="121dp"
+        android:layout_height="119dp"
+        android:background="#F9F9FF"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101"
         app:srcCompat="@drawable/pass2" />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:id="@+id/registrationButton"
+        android:layout_width="174dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="92dp"
+        android:background="#03A9F4"
+        android:onClick="goToRegistrationPage"
+        android:shadowColor="#FFFFFF"
+        android:text="For Registration"
+        android:textColor="#000000"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/forgotButton"
+        android:layout_width="188dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="12dp"
+        android:background="#03A9F4"
+        android:text="Forgot password"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/registrationButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginImageButton"
+        app:layout_constraintVertical_bias="0.268" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
