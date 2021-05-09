@@ -11,6 +11,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.chandiwalaapp.Fragment.AttendanceFragment;
+import com.example.chandiwalaapp.Fragment.BlankFragment;
 
 
 public class UserProfileActivity extends AppCompatActivity {
@@ -40,8 +41,9 @@ public class UserProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 AttendanceFragment attendanceFragment = new AttendanceFragment();
+                BlankFragment blankFragment = new BlankFragment();
                 FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
-                fragmentTransaction.replace(R.id.attendanceConstraintLayout, attendanceFragment);
+                fragmentTransaction.replace(R.id.attendanceConstraintLayout, blankFragment);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
